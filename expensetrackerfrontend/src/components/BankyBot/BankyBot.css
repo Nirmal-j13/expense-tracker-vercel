@@ -1,0 +1,8 @@
+.container{
+    text-align:center;
+    background-color: aquamarine;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
