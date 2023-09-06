@@ -157,7 +157,9 @@ const reducer = (state,action)=>{
    }
 
  //login action
- const reguseraction = async(formData)=>{
+ const reguseraction = async(formData)=>
+ {
+    console.log("hello");
     const config = {
         headers:{
             'Content-Type':"application/json"
@@ -165,6 +167,7 @@ const reducer = (state,action)=>{
     };
      try{
      const res = await axios.post(`${API_USER_URL}/register`,formData,config);
+     console.log(API_USER_URL);
       if(res?.data?.status === 'Success')
       {
         dispatch({
@@ -172,13 +175,13 @@ const reducer = (state,action)=>{
             payload: res.data,
         });
       }
-      window.location.href='/login'
+      window.location.href='/login';
       //console.log(res);
      }
      catch(err)
      {
         dispatch({
-            type:REGISTER_SUCCESS,
+            type:REGISTER_FAILED,
             payload: err?.response?.data?.message,
         })
      }
