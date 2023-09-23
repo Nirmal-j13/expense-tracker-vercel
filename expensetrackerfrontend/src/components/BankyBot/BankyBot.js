@@ -6,7 +6,9 @@ import { json } from 'react-router-dom'
 export const BankyBot = () => {
     //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
     const API_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NDJhZGY1NjdjMWM0ZWM1Y2I0MmNlNiIsImlhdCI6MTY4NDIzMDk3NiwiZXhwIjoxNjg1MDk0OTc2fQ.n3Y51IDltcr9Iqizz8BxtnGpodr3v-PyRdFcwCn4FHg";
-    const finacial_key ="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";
+    const finacial_key =" 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";
+    //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 (old Key)
+    // https://platform.openai.com/account/api-keys to get API Key
     const [typing,setTyping] = useState(false);
     const [messages,setMessages] = useState([
         {

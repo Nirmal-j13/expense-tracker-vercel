@@ -57,7 +57,7 @@ export const TransactionContextProvider = ({ children }) => {
         config,
       );
       console.log(res);
-    if(res?.data?.status === 'success')
+    if(res?.data?.status === 'Success')
     {
       dispatch(
         { 
